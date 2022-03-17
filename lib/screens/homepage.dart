@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './home.dart';
+import './about_me.dart';
 import '../models/header_items.dart';
 import '../utils/constants.dart';
 import '../utils/screen_helper.dart';
@@ -53,7 +55,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Theme.of(context).backgroundColor,
       drawerEdgeDragWidth: !ScreenHelper.isMobile(context) ? 0 : null,
       drawer: Drawer(
-        backgroundColor: const Color(0xff303030),
+        backgroundColor: const Color(0xff404040),
         child: Column(
           children: [
             DrawerHeader(
@@ -80,8 +82,10 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [],
+        children: const [
+          Home(),
+          // AboutMe(),
+        ],
       ),
     );
   }
