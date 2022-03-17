@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './home.dart';
 import './about_me.dart';
+import './contact.dart';
 import '../models/header_items.dart';
 import '../utils/constants.dart';
 import '../utils/screen_helper.dart';
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget {
         leading: ScreenHelper.isMobile(context)
             ? null
             : Image.asset(
-                "assets/images/logo.png",
+                logo,
                 fit: BoxFit.contain,
               ),
         leadingWidth: ScreenHelper.isMobile(context) ? null : 226,
@@ -44,7 +45,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Image.asset(
-                    "assets/images/logo.png",
+                    logo,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -60,7 +61,7 @@ class HomePage extends StatelessWidget {
           children: [
             DrawerHeader(
               child: Image.asset(
-                "assets/images/logo.png",
+                logo,
                 fit: BoxFit.contain,
               ),
             ),
@@ -81,11 +82,14 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        children: const [
-          Home(),
-          // AboutMe(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            Home(),
+            AboutMe(),
+            Contact(),
+          ],
+        ),
       ),
     );
   }

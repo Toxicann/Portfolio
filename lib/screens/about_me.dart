@@ -11,8 +11,11 @@ class AboutMe extends StatelessWidget {
   Widget build(BuildContext context) {
     final scrnHeight = MediaQuery.of(context).size.height;
     final scrnWidth = MediaQuery.of(context).size.width;
-    return ScreenHelper.isMobile(context)
-        ? MobileAbout(height: scrnHeight, width: scrnWidth)
-        : DesktopAbout(height: scrnHeight, width: scrnWidth);
+    return Padding(
+      padding: const EdgeInsets.only(top: 30.0),
+      child: ScreenHelper.isMobile(context)
+          ? MobileAbout(height: scrnHeight, width: scrnWidth)
+          : DesktopAbout(height: scrnHeight, width: scrnWidth),
+    );
   }
 }

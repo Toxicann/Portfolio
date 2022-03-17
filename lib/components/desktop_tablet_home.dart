@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
-import '../models/social_buttons.dart';
+import '../utils/constants.dart';
 import '../utils/screen_helper.dart';
 import '../models/social_icons.dart';
 
@@ -29,7 +28,7 @@ class DesktopHome extends StatelessWidget {
             top: height * 0.15,
             right: width * 0.001,
             child: Image.asset(
-              'assets/images/profileH.png',
+              profileH,
             ),
           ),
           Positioned(

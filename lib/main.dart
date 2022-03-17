@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       darkTheme: Theme.of(context).copyWith(
           primaryColor: const Color(0xffe0e0e0),
           backgroundColor: const Color(0xff454545),
+          cardColor: const Color(0xff656565),
           accentColor: const Color(0xfff3d900),
           appBarTheme: const AppBarTheme(
             backgroundColor: Color(0xff404040),
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         defaultScale: true,
         breakpoints: [
           const ResponsiveBreakpoint.resize(450, name: MOBILE),
-          const ResponsiveBreakpoint.resize(800, name: TABLET),
+          const ResponsiveBreakpoint.autoScale(800, name: TABLET),
           const ResponsiveBreakpoint.autoScale(1000, name: TABLET),
           const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
           const ResponsiveBreakpoint.autoScale(2460, name: "4K"),

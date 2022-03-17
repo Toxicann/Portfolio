@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 import '../utils/screen_helper.dart';
+import '../utils/constants.dart';
 import '../models/social_icons.dart';
 
 class MobileHome extends StatelessWidget {
@@ -28,7 +29,7 @@ class MobileHome extends StatelessWidget {
             right: width * 0.001,
             // left: width * 0.01,
             child: Image.asset(
-              'assets/images/profileH.png',
+              profileH,
               fit: BoxFit.scaleDown,
             ),
           ),
