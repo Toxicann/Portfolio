@@ -103,6 +103,10 @@ class MobileAbout extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              Divider(color: Theme.of(context).primaryColor),
             ],
           ),
         ),

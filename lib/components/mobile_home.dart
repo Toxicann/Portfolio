@@ -86,7 +86,7 @@ class MobileHome extends StatelessWidget {
                           ),
                         ),
                         TypewriterAnimatedText(
-                          'Part-Time Gamer',
+                          'Student',
                           speed: const Duration(milliseconds: 200),
                           textStyle: GoogleFonts.raleway(
                             fontSize: 25,

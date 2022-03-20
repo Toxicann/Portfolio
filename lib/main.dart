@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           primaryColor: const Color(0xffe0e0e0),
           backgroundColor: const Color(0xff454545),
           cardColor: const Color(0xff656565),
-          accentColor: const Color(0xfff3d900),
+          accentColor: Color.fromARGB(255, 243, 198, 0),
           appBarTheme: const AppBarTheme(
             backgroundColor: Color(0xff404040),
           )),

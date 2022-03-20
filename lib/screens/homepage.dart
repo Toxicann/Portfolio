@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './home.dart';
 import './about_me.dart';
+import './projects.dart';
 import './contact.dart';
 import '../models/header_items.dart';
 import '../utils/constants.dart';
@@ -82,14 +83,13 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: const [
-            Home(),
-            AboutMe(),
-            Contact(),
-          ],
-        ),
+      body: ListView(
+        children: const [
+          Home(),
+          AboutMe(),
+          ProjectScreen(),
+          Contact(),
+        ],
       ),
     );
   }
